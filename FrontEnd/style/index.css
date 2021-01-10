@@ -1,0 +1,16 @@
+@font-face {
+    font-family:'Retro-Gaming';
+    src: url('Retro-Gaming.woff') format('woff'), /* Pretty Modern Browsers */
+  }
+
+body {
+    background-image: url("../img/landing.png");
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    font-family: Retro-Gaming, sans-serif;
+}
+

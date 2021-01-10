@@ -11,8 +11,7 @@ body {
     animation: Gradient 15s ease infinite;    
   }
   
-/* rotating loader */
-
+  /* rotating loader */
   .loading {
      max-width: 50%;
      line-height: 1.4;
