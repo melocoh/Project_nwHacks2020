@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>github2021</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="static/style/home.css">
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+
+<body>
+
+  <!-- <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">  
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#section1">Section 1</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#section2">Section 2</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#section3">Section 3</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#section4">Section 4</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#section5">Section 5</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#section6">Section 6</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#section7">Section 7</a>
+      </li>
+    </ul>
+  </nav> -->
+
+  <div class="container">
+    <img class="scroll_img" src ="static/img/home_timeline_blank.png">
+    <div style="margin-top: 10em;">
+      <img id="mascot_1" class="mascot_1 animate__animated animate__fadeInDownBig" src="static/img/float_mega.gif" height="150">
+    </div>
+    <div>
+      <img id="mascot_2" class="mascot_2 animate__animated animate__fadeOutDownBig" src="static/img/float_mega.gif" height="150">
+    </div>
+    <div data-aos="fade-up-left" id="section1" class="story_1">
+      <img class="green_fish" src="static/img/green_fish.png" height="300">
+    </div>
+    <div>
+      <img id="mascot_3" class="mascot_3" src="static/img/float_mega.gif" height="150">
+    </div>
+    <div>
+      <img id="mascot_4" class="mascot_4 animate__animated animate__fadeOutBottomLeft" src="static/img/float_mega.gif" height="150">
+    </div>
+    <div data-aos="fade-right" id="section2" class="story_2">
+      <img class="green_fish" src="static/img/school_fishes.png" height="1150">
+    </div>
+    <div style="margin-left: 65em; margin-top: 18em;">
+      <img class="mascot_5 animate__animated animate__lightSpeedInRight" src="static/img/float_mega.gif" height="150">
+    </div>
+    <div data-aos="fade-down-left" id="section3" class="story_3">
+      <img class="green_fish" src="static/img/shark_fishies.png" height="500">
+    </div>
+    <div data-aos="fade-up-right" id="section4" class="story_4">
+      <img class="green_fish" src="static/img/bottom_fishies.png" height="500">
+    </div>
+    <div data-aos="fade-up-left" id="section5" class="story_5">
+      <img class="green_fish" src="static/img/green_fish.png" height="200">
+    </div>
+    <div data-aos="fade-up-left" id="section6" class="story_6">
+      <img class="green_fish" src="static/img/green_fish.png" height="200">
+    </div>
+    <div data-aos="fade-up-right" id="section7" class="story_7">
+      <img class="animate__animated animate__tada" src="static/img/jellyfish.png" height="300">
+    </div>
+    <div>
+      <img class="mascot_5 animate__animated animate__lightSpeedInRight" src="static/img/float_mega.gif" height="150">
+    </div>
+  </div>
+  <script>
+    window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
+    document.getElementById("mascot_1").style.display = "none";
+    document.getElementById("mascot_2").style.display = "block";
+  } else {
+    document.getElementById("mascot_1").style.display = "block";
+    document.getElementById("mascot_2").style.display = "none";
+  }
+
+  if (document.body.scrollTop > 1420 || document.documentElement.scrollTop > 1420) {
+    document.getElementById("mascot_3").style.display = "none";
+    document.getElementById("mascot_4").style.display = "block";
+  } else {
+    document.getElementById("mascot_3").style.display = "block";
+    document.getElementById("mascot_4").style.display = "none";
+  }
+
+  // if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
+  //   document.getElementById("mascot_1").style.display = "none";
+  //   document.getElementById("mascot_2").style.display = "block";
+  // } else {
+  //   document.getElementById("mascot_1").style.display = "";
+  //   document.getElementById("mascot_2").style.display = "none";
+  // }
+}
+    </script>
+  <script>
+    AOS.init({
+      duration: 1500,
+    });
+  </script>
+
+</body>
+</html>

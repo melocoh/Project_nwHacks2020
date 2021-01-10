@@ -1,10 +1,10 @@
-from flask import Flask, request, g, session, redirect, url_for
+from flask import Flask, request, g, session, redirect, url_for, render_template
 from flask import render_template_string, jsonify
 from flask_github import GitHub
 
 from ghapi import GhApi
 from fastcore.xtras import obj2dict
-
+from flask_cors import CORS
 from sqlalchemy import create_engine, Column, Integer, String
 from sqlalchemy.orm import scoped_session, sessionmaker
 from sqlalchemy.ext.declarative import declarative_base
@@ -14,11 +14,11 @@ SECRET_KEY = 'development key'
 DEBUG = True
 GITHUB_CLIENT_ID = '8b069af36a352b27c01c'
 GITHUB_CLIENT_SECRET = 'f3d775d909b27caa635fae3eb9c7700287a3919e'
-
+CORS_SUPPORTS_CREDENTIALS = True
 
 app = Flask(__name__)
 app.config.from_object(__name__)
-
+cors = CORS(app, resources={r"*": {"origins": "*"}})
 github = GitHub(app) #using for OAuth
 
 
@@ -57,23 +57,32 @@ def after_request(response):
     db_session.remove()
     return response
 
-
+@app.route('/')
+def index():
+    return render_template("index.html")
 @app.route('/login')
 def login():
     if session.get('user_id', None) is None:
         return github.authorize(scope='user,repo')
     else:
-        return 'Already logged in'
+        return render_template("home.html")
+
+@app.route('/logincheck')
+def logincheck():
+    if session.get('user_id', None) is None:
+        return jsonify({'status': 'False'})
+    else:
+        return jsonify({'status': 'True'})
 
 @app.route('/github-callback')
 @github.authorized_handler
 def authorized(access_token):
     #TODO
-    index_url = "http://127.0.0.1:5050/"
-    get_data_url = ""
+    # index_url = 'C:\\Users\\Shreyas Kudari\\Documents\\semester5\\Project_nwHacks2020\\FrontEnd\\home.html'
+    # get_data_url = "C:\\Users\\Shreyas Kudari\\Documents\\semester5\\Project_nwHacks2020\\FrontEnd\\home.html"
 
     if access_token is None:
-        return redirect(index_url) #return to authorization page
+        return render_template("index.html")
 
     user = User.query.filter_by(github_access_token=access_token).first()
     if user is None:
@@ -85,11 +94,8 @@ def authorized(access_token):
     db_session.commit()
 
     session['user_id'] = user.id
-    if get_data_url == "":
-        return 'Logged in successfully'
-    else:
-        return redirect(get_data_url)
-
+    return render_template("home.html")
+ 
 @app.route('/logout')
 def logout():
     session.pop('user_id', None)

@@ -1,0 +1,28 @@
+@font-face {
+    font-family: 'retro-gaming';
+    src: url(Retro-Gaming.woff);
+    font-style: normal;
+    font-weight: 100;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url("../img/bg-loading.png");
+    background-size: cover;
+    background-repeat: repeat;
+    font-family: 'Slabo 27px';
+    overflow: hidden;
+}
+
+.loading {
+    max-width: 50%;
+    line-height: 1.4;
+    font-family: retro-gaming;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+ }

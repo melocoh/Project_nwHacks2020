@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'retro-gaming';
+    src: url(Retro-Gaming.woff);
+    font-style: normal;
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: 'vcr-osd-mono';
+    src: url(VCR_OSD_MONO_1.001.woff);
+    font-style: normal;
+    font-weight: 100;
+}
+
+body {
+    background-image: url("../img/landing.png");
+    height: 100%;
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+.div1 {
+    margin-top: 20%;
+}
