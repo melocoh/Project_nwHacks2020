@@ -15,7 +15,7 @@
 body {
     background-image: url("../img/landing.png");
     height: 100%;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-size: cover;
 }
 
