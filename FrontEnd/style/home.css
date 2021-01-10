@@ -26,6 +26,10 @@
     z-index: -1;
 }
 
+.mascot_3 {
+    /* margin-top: 65em; */
+}
+
 .story_2 {
     width: auto;
 }
@@ -53,8 +57,8 @@
     margin: 17em 0em;
 }
 
-.story_4-2 {
-    z-index: -1;
+.mascot_2{
+    display: none;
 }
 
 .story_5 {
