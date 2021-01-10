@@ -5,12 +5,74 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="style/home.css">
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body>
 
-  <div class = "container">
-    <img class ="scroll_img" src ="img/home_timeline.png">
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">  
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#section1">Section 1</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#section2">Section 2</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#section3">Section 3</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#section4">Section 4</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#section5">Section 5</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#section6">Section 6</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#section7">Section 7</a>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <img class="scroll_img" src ="img/home_timeline.png">
+    <div data-aos="fade-up-left" id="section1" class="story_1">
+      <img class="green_fish" src="img/green_fish.png" height="200">
+      <img class="green_fish" src="img/bubbles.png" height="200">
+    </div>
+    <div data-aos="fade-up-left" id="section2" class="story_2">
+      <img class="green_fish" src="img/green_fish.png" height="200">
+    </div>
+    <div data-aos="fade-up-left" id="section3" class="story_3">
+      <img class="green_fish" src="img/green_fish.png" height="200">
+    </div>
+    <div data-aos="fade-up-left" id="section4" class="story_4">
+      <img class="green_fish" src="img/green_fish.png" height="200">
+    </div>
+    <div data-aos="fade-up-left" id="section5" class="story_5">
+      <img class="green_fish" src="img/green_fish.png" height="200">
+    </div>
+    <div data-aos="fade-up-left" id="section6" class="story_6">
+      <img class="green_fish" src="img/green_fish.png" height="200">
+    </div>
+    <div data-aos="fade-up-left" id="section7" class="story_7">
+      <img class="green_fish" src="img/green_fish.png" height="200">
+    </div>
   </div>
+
+  <script>
+    AOS.init({
+      duration: 1500,
+    });
+  </script>
 
 </body>
 </html>
