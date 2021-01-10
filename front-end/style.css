@@ -1,7 +1,21 @@
+@font-face {
+    font-family: 'retro-gaming';
+    src: url(Retro-Gaming.woff);
+    font-style: normal;
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: 'vcr-osd-mono';
+    src: url(VCR_OSD_MONO_1.001.woff);
+    font-style: normal;
+    font-weight: 100;
+}
+
 body {
     margin: 0;
     height: 1000px;
-    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Poppins', sans-serif; */
 }
 
 .banner {
@@ -25,10 +39,13 @@ body {
     top: 60%;
     left: 22%;
     text-transform: uppercase;
+    font-family: retro-gaming;
 }
 
 .content {
     width: 1170px;
     margin: auto;
     text-align: center;
+    font-family: vcr-osd-mono;
+    font-weight: 100;
 }
