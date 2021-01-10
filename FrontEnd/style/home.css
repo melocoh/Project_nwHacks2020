@@ -3,6 +3,11 @@
     width: 100%;
 }
 
+.text_1 {
+    font-size: 20pt;
+    padding: 1em;
+}
+
 .scroll_img {
     position: absolute;
     left: 0px;
