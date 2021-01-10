@@ -1,0 +1,19 @@
+certifi==2020.12.5
+chardet==4.0.0
+click==7.1.2
+fastcore @ file:///home/jhoward/anaconda3/conda-bld/fastcore_1608591197602/work
+Flask==1.1.2
+Flask-SQLAlchemy==2.4.4
+ghapi @ file:///home/jhoward/anaconda3/conda-bld/ghapi_1606684309931/work
+GitHub-Flask==3.2.0
+idna==2.10
+itsdangerous==1.1.0
+Jinja2==2.11.2
+MarkupSafe @ file:///D:/bld/markupsafe_1602267515311/work
+packaging @ file:///home/conda/feedstock_root/build_artifacts/packaging_1607785313469/work
+pyparsing==2.4.7
+requests==2.25.1
+SQLAlchemy==1.3.22
+urllib3==1.26.2
+Werkzeug==1.0.1
+wincertstore==0.2
