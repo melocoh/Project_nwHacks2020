@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Slabo 27px';
+    font-style: normal;
+    font-weight: 400;
+    src: url('fonts/slabo-27px-v4-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local('Slabo 27px'), local('Slabo27px-Regular'),
+         url('fonts/slabo-27px-v4-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('fonts/slabo-27px-v4-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('fonts/slabo-27px-v4-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('fonts/slabo-27px-v4-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('fonts/slabo-27px-v4-latin-regular.svg#Slabo27px') format('svg'); /* Legacy iOS */
+  }
