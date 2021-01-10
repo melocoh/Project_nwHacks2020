@@ -25,10 +25,21 @@
     margin-left: 45em;
 }
 
+.story_1-2 {
+    margin-top: -10em;
+    z-index: -1;
+}
+
 .story_2 {
     height: 50vh;
     width: auto;
     margin-top: 55em;
+}
+
+.story_2-2 {
+    margin-top: -25em;
+    margin-left: 25em;
+    z-index: -1;
 }
 
 .story_3 {
@@ -38,30 +49,49 @@
     margin-left: 45em;
 }
 
+.story_3-2 {
+    margin-top: -25em;
+    margin-left: -8em;
+    z-index: -1;
+}
+
 .story_4 {
     height: 50vh;
     width: auto;
     margin: 17em 0em;
 }
 
+.story_4-2 {
+    z-index: -1;
+}
+
 .story_5 {
     height: 50vh;
     width: auto;
-    background-color: aqua;
-    opacity: 50%;
     margin: 7em 2em;
+}
+
+.story_5-2 {
+    z-index: -1;
 }
 
 .story_6 {
     height: 50vh;
     width: auto;
-    background-color: aqua;
-    opacity: 50%;
     margin: 7em 2em;
+}
+
+.story_6-2 {
+    z-index: -1;
 }
 
 .story_7 {
     height: 50vh;
     width: auto;
     margin: 7em 2em;
+}
+
+.story_7-2 {
+    margin-top: -10em;
+    z-index: -1;
 }
