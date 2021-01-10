@@ -19,11 +19,11 @@
   }
 
 .story_1 {
-    height: 50vh;
+    height: 100%;
     width: auto;
-    background-color: aqua;
     opacity: 50%;
-    margin: 7em 2em;
+    margin-top: 25em;
+    margin-left: 45em;
 }
 
 .story_2 {
@@ -31,7 +31,6 @@
     width: auto;
     background-color: aqua;
     opacity: 50%;
-    margin: 7em 2em;
 }
 
 .story_3 {
