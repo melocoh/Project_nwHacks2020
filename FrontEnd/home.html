@@ -50,13 +50,25 @@
   <div class="container">
     <img class="scroll_img" src ="img/home_timeline_blank.png">
     <div style="margin-top: 10em;">
-      <img class="big_boi animate__animated animate__fadeInDownBig" src="img/float_mega.gif" height="150">
+      <img id="mascot_1" class="mascot_1 animate__animated animate__fadeInDownBig" src="img/float_mega.gif" height="150">
+    </div>
+    <div>
+      <img id="mascot_2" class="mascot_2 animate__animated animate__fadeOutDownBig" src="img/float_mega.gif" height="150">
     </div>
     <div data-aos="fade-up-left" id="section1" class="story_1">
       <img class="green_fish" src="img/green_fish.png" height="300">
     </div>
+    <div>
+      <img id="mascot_3" class="mascot_3" src="img/float_mega.gif" height="150">
+    </div>
+    <div>
+      <img id="mascot_4" class="mascot_4 animate__animated animate__fadeOutBottomLeft" src="img/float_mega.gif" height="150">
+    </div>
     <div data-aos="fade-right" id="section2" class="story_2">
       <img class="green_fish" src="img/school_fishes.png" height="1150">
+    </div>
+    <div style="margin-left: 65em; margin-top: 18em;">
+      <img class="mascot_5 animate__animated animate__lightSpeedInRight" src="img/float_mega.gif" height="150">
     </div>
     <div data-aos="fade-down-left" id="section3" class="story_3">
       <img class="green_fish" src="img/shark_fishies.png" height="500">
@@ -73,8 +85,39 @@
     <div data-aos="fade-up-right" id="section7" class="story_7">
       <img class="animate__animated animate__tada" src="img/jellyfish.png" height="300">
     </div>
+    <div>
+      <img class="mascot_5 animate__animated animate__lightSpeedInRight" src="img/float_mega.gif" height="150">
+    </div>
   </div>
+  <script>
+    window.onscroll = function() {scrollFunction()};
 
+function scrollFunction() {
+  if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
+    document.getElementById("mascot_1").style.display = "none";
+    document.getElementById("mascot_2").style.display = "block";
+  } else {
+    document.getElementById("mascot_1").style.display = "block";
+    document.getElementById("mascot_2").style.display = "none";
+  }
+
+  if (document.body.scrollTop > 1420 || document.documentElement.scrollTop > 1420) {
+    document.getElementById("mascot_3").style.display = "none";
+    document.getElementById("mascot_4").style.display = "block";
+  } else {
+    document.getElementById("mascot_3").style.display = "block";
+    document.getElementById("mascot_4").style.display = "none";
+  }
+
+  // if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
+  //   document.getElementById("mascot_1").style.display = "none";
+  //   document.getElementById("mascot_2").style.display = "block";
+  // } else {
+  //   document.getElementById("mascot_1").style.display = "";
+  //   document.getElementById("mascot_2").style.display = "none";
+  // }
+}
+    </script>
   <script>
     AOS.init({
       duration: 1500,
