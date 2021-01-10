@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'retro-gaming';
+    src: url(Retro-Gaming.woff);
+    font-style: normal;
+    font-weight: 100;
+}
+
 body {
     display: flex;
     justify-content: center;
@@ -13,6 +20,7 @@ body {
 .loading {
     max-width: 50%;
     line-height: 1.4;
+    font-family: retro-gaming;
     font-size: 1.4rem;
     font-weight: bold;
     text-align: center;
