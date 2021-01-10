@@ -19,26 +19,18 @@
   }
 
 .story_1 {
-    height: 100%;
     width: auto;
-    margin-top: 65em;
-    margin-left: 45em;
 }
 
 .story_1-2 {
-    margin-top: -10em;
     z-index: -1;
 }
 
 .story_2 {
-    height: 50vh;
     width: auto;
-    margin-top: 55em;
 }
 
 .story_2-2 {
-    margin-top: -25em;
-    margin-left: 25em;
     z-index: -1;
 }
 
