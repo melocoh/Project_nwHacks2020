@@ -85,7 +85,10 @@ def authorized(access_token):
     db_session.commit()
 
     session['user_id'] = user.id
-    return 'Logged in'
+    if get_data_url == "":
+        return 'Logged in successfully'
+    else:
+        return redirect(get_data_url)
 
 @app.route('/logout')
 def logout():
