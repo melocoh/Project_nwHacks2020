@@ -16,14 +16,35 @@
 
 ::-webkit-scrollbar {
     display: none;
-  }
-
-.story_1 {
-    width: auto;
 }
 
-.story_1-2 {
-    z-index: -1;
+.card-text {
+    border: none !important;
+}
+
+.card {
+    width: 50em !important;
+    z-index: -1 !important;
+}
+
+.row1 {
+    margin-top: 15em;
+}
+
+.row2 {
+    margin-top: 75em;
+}
+
+#mascot_2 {
+}
+
+.fish_1 {
+    margin-left: 50em;
+}
+
+.row2-p {
+    margin-top: -10em;
+    margin-left: 3em;
 }
 
 .mascot_3 {
