@@ -1,7 +1,6 @@
 .container {
     height: auto;
     width: 100%;
-    /* background-color: blanchedalmond; */
 }
 
 .scroll_img {
@@ -13,4 +12,64 @@
     z-index: -10;
     height: auto;
     width: 100%;
+}
+
+::-webkit-scrollbar {
+    display: none;
+  }
+
+.story_1 {
+    height: 50vh;
+    width: auto;
+    background-color: aqua;
+    opacity: 50%;
+    margin: 7em 2em;
+}
+
+.story_2 {
+    height: 50vh;
+    width: auto;
+    background-color: aqua;
+    opacity: 50%;
+    margin: 7em 2em;
+}
+
+.story_3 {
+    height: 50vh;
+    width: auto;
+    background-color: aqua;
+    opacity: 50%;
+    margin: 7em 2em;
+}
+
+.story_4 {
+    height: 50vh;
+    width: auto;
+    background-color: aqua;
+    opacity: 50%;
+    margin: 7em 2em;
+}
+
+.story_5 {
+    height: 50vh;
+    width: auto;
+    background-color: aqua;
+    opacity: 50%;
+    margin: 7em 2em;
+}
+
+.story_6 {
+    height: 50vh;
+    width: auto;
+    background-color: aqua;
+    opacity: 50%;
+    margin: 7em 2em;
+}
+
+.story_7 {
+    height: 50vh;
+    width: auto;
+    background-color: aqua;
+    opacity: 50%;
+    margin: 7em 2em;
 }
