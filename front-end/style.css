@@ -1,0 +1,51 @@
+@font-face {
+    font-family: 'retro-gaming';
+    src: url(Retro-Gaming.woff);
+    font-style: normal;
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: 'vcr-osd-mono';
+    src: url(VCR_OSD_MONO_1.001.woff);
+    font-style: normal;
+    font-weight: 100;
+}
+
+body {
+    margin: 0;
+    height: 1000px;
+    /* font-family: 'Poppins', sans-serif; */
+}
+
+.banner {
+    position: relative;
+    margin: 0;
+    width: 100%;
+    background-image: url(https://cdn.pixabay.com/photo/2016/05/24/16/48/mountains-1412683_1280.png);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    opacity: 1;
+    text-align: center;
+    font-size: 120px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.text-fade {
+    position: absolute;
+    top: 60%;
+    left: 22%;
+    text-transform: uppercase;
+    font-family: retro-gaming;
+}
+
+.content {
+    width: 1170px;
+    margin: auto;
+    text-align: center;
+    font-family: vcr-osd-mono;
+    font-weight: 100;
+}
