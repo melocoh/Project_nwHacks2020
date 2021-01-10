@@ -21,32 +21,27 @@
 .story_1 {
     height: 100%;
     width: auto;
-    opacity: 50%;
-    margin-top: 25em;
+    margin-top: 65em;
     margin-left: 45em;
 }
 
 .story_2 {
     height: 50vh;
     width: auto;
-    background-color: aqua;
-    opacity: 50%;
+    margin-top: 55em;
 }
 
 .story_3 {
     height: 50vh;
     width: auto;
-    background-color: aqua;
-    opacity: 50%;
-    margin: 7em 2em;
+    margin-top: 50em;
+    margin-left: 45em;
 }
 
 .story_4 {
     height: 50vh;
     width: auto;
-    background-color: aqua;
-    opacity: 50%;
-    margin: 7em 2em;
+    margin: 17em 0em;
 }
 
 .story_5 {
